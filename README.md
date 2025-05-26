@@ -15,4 +15,4 @@ Provides detailed explanations of password weaknesses and practical tips for imp
 
 Stylish ocean-themed bubble animation to enhance user experience
 
-Clean and colorful terminal output with helpful icons
+Clean and colorful terminal output, easy to read
