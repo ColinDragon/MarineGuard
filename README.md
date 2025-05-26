@@ -5,8 +5,13 @@ Marine Guard is a Python-based console application that evaluates the strength o
 
  - Features - 
 Calculates password entropy based on character variety and length
+
 Detects common issues such as missing uppercase, lowercase, digits, special characters, repeated or sequential characters
+
 Checks against a list of common passwords and dictionary words
+
 Provides detailed explanations of password weaknesses and practical tips for improvement
+
 Stylish ocean-themed bubble animation to enhance user experience
+
 Clean and colorful terminal output with helpful icons
