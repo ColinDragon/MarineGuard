@@ -147,24 +147,24 @@ def analyze_password(password):
     commonality, dictionary words, and weaknesses.
     """
     bubble_animation()
-    print(AQUA + BOLD + "🌊 Oceanic Password Analyzer 🌊" + RESET)
+    print(AQUA + BOLD + " Oceanic Password Analyzer " + RESET)
     print(f"\nAnalyzing password: {BOLD}{password}{RESET}")
 
     # Check for common password list
     if is_common_password(password):
-        print("\n❌ Password is found in the list of common passwords. Very weak!")
-        print("💡 Avoid using common passwords that are easy to guess or found in leaks.")
+        print("\n Password is found in the list of common passwords. Very weak!")
+        print(" Avoid using common passwords that are easy to guess or found in leaks.")
         return
 
     # Check dictionary words inside password
     contains_word, word = contains_dictionary_word(password)
     if contains_word:
-        print(f"\n❌ Password contains common dictionary word: '{word}'")
-        print("💡 Try mixing unrelated words or adding symbols/numbers to increase strength.")
+        print(f"\n Password contains common dictionary word: '{word}'")
+        print(" Try mixing unrelated words or adding symbols/numbers to increase strength.")
 
     # Calculate entropy
     entropy = calculate_entropy(password)
-    print(f"\n🔐 Entropy Score: {BOLD}{entropy} bits{RESET}")
+    print(f"\n Entropy Score: {BOLD}{entropy} bits{RESET}")
 
     # Determine strength based on entropy and weaknesses
     weaknesses = explain_weakness(password)
@@ -175,7 +175,7 @@ def analyze_password(password):
     else:
         strength = "Strong"
 
-    print(f"\n💪 Strength: {AQUA}{strength}{RESET}")
+    print(f"\n Strength: {AQUA}{strength}{RESET}")
 
     # Print weaknesses and tips if password is weak
     if strength in ["Very Weak", "Weak"]:
@@ -187,7 +187,7 @@ def analyze_password(password):
         print(" - Mix uppercase, lowercase, digits, and symbols")
         print(" - Avoid common words, patterns, repeated characters, and sequences")
     elif strength == "Moderate":
-        print("\n✅ This password is moderately strong but can be improved.")
+        print("\n This password is moderately strong but can be improved.")
     else:
         print("\n✅ This is a strong password. Well done!")
 
